@@ -14,7 +14,6 @@ function Card({ post }) {
 
         <div className={style.body}>
           <h3 className={style.title}>{title}</h3>
-          <div key={id}></div>
           <div className={style.description}>{content}</div>
           <div key={id}>
             {tags.map((tag) => (
