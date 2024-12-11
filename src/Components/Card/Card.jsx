@@ -1,3 +1,4 @@
+import DeletePost from "../DeletePost/DeletePost";
 import style from "./Card.module.css";
 
 function Card({ post }) {
@@ -29,15 +30,9 @@ function Card({ post }) {
               </span>
             ))}
           </div>
-
-          {/* <div className={style.buttons}>
-            <div>
-              <Button />
-            </div>
-            <div>
-              <CancelBtn posts={props} />
-            </div>
-          </div> */}
+          <div>
+            <DeletePost id={id} />
+          </div>
         </div>
       </div>
     </>

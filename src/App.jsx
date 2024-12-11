@@ -36,9 +36,22 @@ function App() {
     fetchPosts();
   }, []);
 
+  function deletePost(id) {
+    axios
+      .delete(`${API_BASE_URI}posts/${id}`)
+      .then((res) => {
+        fetchPosts();
+      })
+      .catch((err) => {
+        console.err(err);
+      });
+  }
+
   return (
     <>
-      <GlobalContext.Provider value={{ categories, API_BASE_URI, posts }}>
+      <GlobalContext.Provider
+        value={{ categories, API_BASE_URI, posts, deletePost }}
+      >
         <BrowserRouter>
           <Navbar />
           <Routes>
