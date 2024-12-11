@@ -1,0 +1,14 @@
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: aliceblue;
+}
+
+li {
+  color: black;
+  background-color: rgb(152, 210, 212);
+  padding: 1rem;
+  border-radius: 2rem;
+}

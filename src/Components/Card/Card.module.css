@@ -1,0 +1,78 @@
+.card {
+  background-color: white;
+  /* max-width: 30rem; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.body {
+  padding: 1rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.cardTag {
+  display: inline-block;
+  margin-right: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.Dolci {
+  background-color: cornflowerblue;
+  color: black;
+}
+
+.Torte {
+  background-color: darkorange;
+}
+
+.Ricettevegetariane {
+  background-color: blue;
+}
+
+.Primipiatti {
+  background-color: rgb(255, 225, 0);
+  color: black;
+}
+
+.Dolciveloci {
+  background-color: rgb(107, 174, 83);
+  color: black;
+}
+
+.Ricetteveloci {
+  background-color: rgb(159, 83, 174);
+  color: black;
+}
+
+.Antipasti {
+  background-color: rgb(174, 83, 116);
+  color: rgb(255, 255, 255);
+}
+
+.Dolcialcioccolato {
+  background-color: rgb(99, 83, 89);
+  color: rgb(211, 208, 208);
+}
+
+.description {
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
