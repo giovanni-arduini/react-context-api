@@ -8,7 +8,7 @@ function Card({ post }) {
       <div className={style.card}>
         <img
           className={style.thumbnail}
-          src={image ? image : "placeholder"}
+          src={image ? `/imgs/posts/${image}` : "placeholder"}
           alt=""
         />
 
