@@ -2,13 +2,14 @@ import style from "./Card.module.css";
 
 function Card({ post }) {
   const { id, image, title, category, content, tags, published } = post;
+  const IMG_BASE_URI = "http://localhost:3000/imgs/posts/";
 
   return (
     <>
       <div className={style.card}>
         <img
           className={style.thumbnail}
-          src={image ? `/imgs/posts/${image}` : "placeholder"}
+          src={image ? `${IMG_BASE_URI}${image}` : "placeholder"}
           alt=""
         />
 
