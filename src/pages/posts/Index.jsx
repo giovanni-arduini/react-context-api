@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import axios from "axios";
 import Card from "../../Components/Card/Card";
 import GlobalContext from "../../Context/GlobalContext";
 
@@ -7,24 +6,27 @@ function Index() {
   //
   const { categories } = useContext(GlobalContext);
   const { API_BASE_URI } = useContext(GlobalContext);
-  const [posts, setPosts] = useState([]);
+  const { posts } = useContext(GlobalContext);
 
-  function fetchPosts() {
-    axios
-      .get(`${API_BASE_URI}posts`)
+  console.log(posts);
+  // const [posts, setPosts] = useState([]);
 
-      .then((res) => {
-        setPosts(res.data.posts);
-        console.log(res.data.posts);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }
+  // function fetchPosts() {
+  //   axios
+  //     .get(`${API_BASE_URI}posts`)
 
-  useEffect(() => {
-    fetchPosts();
-  }, []);
+  //     .then((res) => {
+  //       setPosts(res.data.posts);
+  //       console.log(res.data.posts);
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // }
+
+  // useEffect(() => {
+  //   fetchPosts();
+  // }, []);
 
   return (
     <>
