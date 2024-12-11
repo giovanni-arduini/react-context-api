@@ -11,6 +11,7 @@ import "./App.css";
 import ErrorNotFound from "./pages/ErrorNotFound/ErrorNotFound";
 import { useState, useEffect } from "react";
 import GlobalContext from "./Context/GlobalContext";
+import PostList from "./pages/posts/PostList";
 
 const API_BASE_URI = "http://localhost:3000/";
 
@@ -47,7 +48,7 @@ function App() {
             </Route>
 
             <Route path="/posts">
-              <Route path="" Component={Index}></Route>
+              <Route path="" Component={PostList}></Route>
               <Route path=":id" Component={Show}></Route>
               <Route path="create" Component={Create}></Route>
             </Route>
